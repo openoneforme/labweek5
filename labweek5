@@ -1,0 +1,144 @@
+//lab week 5
+#include <iostream>
+#include <string>
+using namespace std;
+
+double a, b, c, x, y, z;
+
+//creator name
+void creator()
+{
+    cout << "This program was created by Jasni Jazali Bin Mohd Zamri" << endl;
+    cout << "The creator matrics number B031910077" << endl;
+}
+
+void thanks()
+{
+    cout << "Thanks for using this program to make your day become easier :)" << endl;
+}
+
+//line breaker
+void line()
+{
+    cout << "#################################################################" << endl;
+}
+
+int main()
+{
+    line();
+    creator();
+    line();
+
+    // 1) y = x + 9
+    cout << "by using this equation y = x + 9" << endl;
+	cout << "insert positive value for x" << endl;
+	cin >> x ;
+	//loop to force user to enter positive number only
+	while ( x <= 0 ){
+	    if ( x <= 0 )
+	    {
+	        cout << "POSITIVE NUMBER ONLY!!!" << endl;
+	    }
+	    cin >> x ;
+	}   
+	y = x + 9;
+	cout << "the value of y when using y = x + 9 equation is " << y << endl;
+	line();
+	
+	// 2) a = 2b + 2c
+	cout << "by using this equation a = 2b + 2c" << endl;
+	cout << "insert positive value for b" << endl;
+	cin >> b;
+	//loop to force user to enter positive number only
+	while ( b <= 0 ){
+	    if ( b <= 0 )
+	    {
+	        cout << "POSITIVE NUMBER ONLY!!!" << endl;
+	    }
+	    cin >> b ;
+	}
+	cout << "insert positive value for c" << endl;
+	cin >> c;
+	//loop to force user to enter positive number only
+	while ( c <= 0 ){
+	    if ( c <= 0 )
+	    {
+	        cout << "POSITIVE NUMBER ONLY!!!" << endl;
+	    }
+	    cin >> c ;
+	}
+	a = (2*b) + (2*c);
+	cout << "the value of y when using a = 2b + 2c equation is " << a << endl;
+	line();
+	
+	// 3) y = x^3
+	cout << "by using this equation y = x^3" << endl;
+	cout << "insert positive value for x" << endl;
+	cin >> x;
+	//loop to force user to enter positive number only
+	while ( x <= 0 ){
+	    if ( x <= 0 )
+	    {
+	        cout << "POSITIVE NUMBER ONLY!!!" << endl;
+	    }
+	    cin >> x ;
+	}
+	y = x * x * x;
+	cout << "the value of y when using y = x^3 equation is " << y << endl;
+	line();
+	
+	// 4) y = (x / z^2) + 2
+	cout << "by using this equation y = (x / z^2) + 2" << endl;
+	cout << "insert positive value for x" << endl;
+	cin >> x;
+	//loop to force user to enter positive number only
+	while ( x <= 0 ){
+	    if ( x <= 0 )
+	    {
+	        cout << "POSITIVE NUMBER ONLY!!!" << endl;
+	    }
+	    cin >> x ;
+	}
+	cout << "insert positive value for z" << endl;
+	cin >> z;
+	//loop to force user to enter positive number only
+	while ( z <= 0 ){
+	    if ( z <= 0 )
+	    {
+	        cout << "POSITIVE NUMBER ONLY!!!" << endl;
+	    }
+	    cin >> z ;
+	}
+	y = ( x / ( z * z ) ) + 2;
+	cout << "the value of y when using y = (x / z^2) + 2 equation is " << y << endl;
+	
+	// 5) y = (x^2) / (y^2)
+	line();
+	cout << "by using this equation y = (x^2) / (y^2)" << endl;
+	cout << "insert positive value for x" << endl;
+	cin >> x;
+	//loop to force user to enter positive number only
+	while ( x <= 0 ){
+	    if ( x <= 0 )
+	    {
+	        cout << "POSITIVE NUMBER ONLY!!!" << endl;
+	    }
+	    cin >> x ;
+	}
+	cout << "insert positive value for y" << endl;
+	cin >> y;
+	//loop to force user to enter positive number only
+	while ( y <= 0 ){
+	    if ( y <= 0 )
+	    {
+	        cout << "POSITIVE NUMBER ONLY!!!" << endl;
+	    }
+	    cin >> y ;
+	}
+	y = ( x * x ) / ( y * y );
+	cout << "the value of y when using y = (x^2) / (y^2) equation is " << y << endl;
+	line();
+	thanks();
+    line();
+    return 0;
+}
