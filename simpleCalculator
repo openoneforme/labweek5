@@ -1,0 +1,70 @@
+#include <iostream>
+using namespace std;
+
+char op;
+double num,ans;
+
+void thanks()
+{
+    cout << "Thanks for using the calculator that I had created!" << endl;
+}
+
+void creator()
+{
+    cout << "Hello user! Im glad to see you again :)" << endl;
+    cout << "Creator Name : JASNI JAZALI BIN MOHD ZAMRI" << endl;
+    cout << "Creator Matrics Number : B031910077" << endl;
+}
+
+void lines()
+{
+    cout << "*******************************************************************" << endl;
+}
+
+void instruction()
+{
+    cout << "How to use this calculator?" << endl;
+    cout << "Step 1 : Put 1st number." << endl;
+    cout << "Step 2 : Put operator." << endl;
+    cout << "Step 3 : Put 2nd number." << endl;
+    cout << "Step 4 : repeat Step 2 and Step 3." << endl;
+    cout << "If you want to end your calculation. After Step 3 put any operator" << endl;
+    cout << "then put 00 as operand." << endl;
+    cout << "I hope this calculator will make your daily life easier :)" << endl;
+}
+
+int main()
+{
+    lines();
+    creator();
+    thanks();
+    lines();
+    instruction();
+    lines();
+    cout << "Write something you want to calculate and the operator." << endl;
+    cin >> ans >> op >> num;
+    while (num != 00){
+        switch (op)
+        {
+        case '+' :
+            ans = ans + num;
+            break;
+        case '-' :
+            ans = ans - num;
+            break;
+        case '*' :
+            ans = ans * num;
+            break;
+        case '/' :
+            ans = ans / num;
+            break;
+        default :
+            break;
+        }
+        cin >> op >> num;
+    }
+    cout << "Your answer is : " << ans << endl;
+    lines();
+    thanks();
+    return 0;
+}
